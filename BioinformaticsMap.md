@@ -44,7 +44,7 @@ It's necessary to understand the relationship between the type of genome (plant,
 
 # Differential Expression workflows - pseudo-alignment
 
-Pseudo-alignment is a broad term used to describe the transcript counting methods of tools such as Cufflinks, RSEM, kallisto and Salmon.
+Pseudo-alignment is a broad term used to describe the transcript counting methods of tools such as kallisto and Salmon.
 
 However, as ([Soneson et al](https://f1000research.com/articles/4-1521)) noted:
 
