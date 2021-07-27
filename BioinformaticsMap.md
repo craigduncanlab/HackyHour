@@ -3,7 +3,7 @@ Last updated 27.7.21
 
 Guides to navigating the bioinformatics workflows 'help desk' space.  Always a work in progress.
 
-General steps that occur in most workflows.
+## General steps that occur in most workflows.
 
 (1) Seq & QA checks (may be done offset, by the big labs, but you supply data)
 (2) Align 
@@ -42,11 +42,9 @@ The permutations involved in bionformatics workflows are considerable.  Even amo
 
 It's necessary to understand the relationship between the type of genome (plant, animal, model species (human, mouse)), whether it is a DNA or RNA genomic study, and the consequences this has immediately for the alignment tools and constraints.  In the following workflows, the 4 stages of analysis may be the same, but these genomic considerations suggest that the use of appropriate alignment tools will be suggested.  If there are vertical workflows that pipe information from these aligners to specific counting programs, then these should also shop up in the workflow.
 
-# Differential Expression workflows - pseudo-alignment
+## RNA-seq studies
 
-Pseudo-alignment is a broad term used to describe the transcript counting methods of tools such as kallisto and Salmon.
-
-However, as ([Soneson et al](https://f1000research.com/articles/4-1521)) noted:
+As ([Soneson et al](https://f1000research.com/articles/4-1521)) noted:
 
 "most RNA-seq studies can be classified as either: 
 
@@ -60,7 +58,11 @@ The original counting methods used target genes to provide the static, non-overl
 
 An original measure, namely reads/fragments per kilobase per million reads, has been queried recently.
 
-These workflows illustrate possible RNA-seq transcriptome quantitification and analysis pipelines
+# Differential Expression workflows - pseudo-alignment
+
+Pseudo-alignment is a broad term used to describe the transcript counting methods of tools such as kallisto and Salmon.
+
+These workflows illustrate possible RNA-seq transcriptome quantification and analysis pipelines
 
 | | Stage  | WF1 | WF2 | WF3 |
 |:-----|:-----|:-----|:-----| :-----|
