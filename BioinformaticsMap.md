@@ -240,6 +240,10 @@ Mikado is a python based prediction comparision tool.  It requires, as a minimu,
 
 Variant calling software (to identify variants within reads in the experiment that are in the same aligned regions) includes GATK-Haplotype caller, playtpus, SAMTools, bcftools.  [Past this, the goals of variant calling is annotation, which will feed back into subsequent indexing for alignment, and differential gene expression work].  The meaning of variant itself varies - it could be a single nucleotide (SNPs) or a deletion or insertion (indels), or structural variations (SVs).
 
+Trimming may be required.  See [TrimmingIntro](https://dnatech.genomecenter.ucdavis.edu/faqs/when-should-i-trim-my-illumina-reads-and-how-should-i-do-it/)
+
+[Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)
+
 # Things to know about Bioconductor:
 
 1. It uses the SingleCellExperiment package (which creates an object of the same name) to store experimental data.
