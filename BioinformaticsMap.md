@@ -3,6 +3,21 @@ Last updated 17.8.21
 
 Guides to navigating the bioinformatics workflows 'help desk' space.  Always a work in progress.
 
+# Workflow - workflow management tools
+
+Current list (will no doubt grow)
+
+[Snakemake](https://snakemake.github.io)
+[cwltool](https://pypi.org/project/cwltool/) - Common Workflow Language, python implementation
+[Toil](http://toil.ucsc-cgl.org) - also python
+[Nextflow](https://www.nextflow.io)
+
+Containers:
+[Docker](https://www.docker.com)
+[Singularity](https://singularity.hpcng.org) - HPC container system
+
+# Workflow - common bioinformatics pipeline phases
+
 ## General steps that occur in most workflows.
 
 (1) Seq & QA checks (may be done offset, by the big labs, but you supply data)
