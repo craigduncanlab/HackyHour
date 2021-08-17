@@ -1,5 +1,5 @@
 # Hacky Hour Bioinformatics Links
-Last updated 27.7.21
+Last updated 17.8.21
 
 Guides to navigating the bioinformatics workflows 'help desk' space.  Always a work in progress.
 
@@ -165,6 +165,7 @@ Useful distinctions (as mentioned in beginner guide to DESeq2, by M. I. Love, W.
 featureCount will count the transcriptome information, but does so with extra alignment step so that the transcriptome counts can be referenced back to the genome (exons overlapping with transcripts, also multi-mapping reads of transcriptomes ignored for gene counts here, but contribute to transcript counts?).
 
 Some HPC-based advice - Galaxy: https://help.galaxyproject.org/t/how-can-i-improve-very-low-assigned-rate-in-featurecounts/758
+This [Galaxy tutorial](https://www.melbournebioinformatics.org.au/tutorials/tutorials/galaxy-workflows/galaxy-workflows/) by Simon Gladman of Melbourne University is also very helpful.
 
 LIMMA: Linear Models for Microarray and RNA-seq Data
 
@@ -240,6 +241,11 @@ Mikado is a python based prediction comparision tool.  It requires, as a minimu,
 
 Variant calling software (to identify variants within reads in the experiment that are in the same aligned regions) includes GATK-Haplotype caller, playtpus, SAMTools, bcftools.  [Past this, the goals of variant calling is annotation, which will feed back into subsequent indexing for alignment, and differential gene expression work].  The meaning of variant itself varies - it could be a single nucleotide (SNPs) or a deletion or insertion (indels), or structural variations (SVs).
 
+For now, see these Melbourne Bioinformatics resources:
+
+1. [Variant Calling Pipeline](https://github.com/melbournebioinformatics/variant_calling_pipeline)
+2. [Variant Calling Using Galaxy](https://www.melbournebioinformatics.org.au/tutorials/tutorials/variant_calling_galaxy_1/variant_calling_galaxy_1/)
+
 Trimming may be required.  See [TrimmingIntro](https://dnatech.genomecenter.ucdavis.edu/faqs/when-should-i-trim-my-illumina-reads-and-how-should-i-do-it/)
 
 [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)
@@ -256,3 +262,5 @@ In this respect, Bioconductor's SingleCellExperiment is another R package in the
 John Hopkins University has been operating with its own universe of R packages called 'Bioconductor'; a very regulated update and maintenance systems for the packages.
 
 https://bioconductor.org/books/release/OSCA/index.html
+
+Bioconductor has its own installation manager (BiocManage) to help with installation.
