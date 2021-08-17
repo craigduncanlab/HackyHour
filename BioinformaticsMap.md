@@ -305,7 +305,7 @@ Dendrogram options in R:
 
 ## Phytools
 
-[PhyTools Blog] (http://blog.phytools.org/2017/06/custom-tip-spacing-of-fan-tree-plot-in-r.html)
+[PhyTools Blog](http://blog.phytools.org/2017/06/custom-tip-spacing-of-fan-tree-plot-in-r.html)
 
 ## Phylosignal
 
@@ -314,7 +314,7 @@ Dendrogram options in R:
 
 ## GGTree (Bioconductor package)
 
-[[GGtree Home](https://guangchuangyu.github.io/software/ggtree/)
+[GGtree Home](https://guangchuangyu.github.io/software/ggtree/)
 [GGtree vignette](https://bioconductor.org/packages/devel/bioc/vignettes/ggtree/inst/doc/ggtree.html)
 
 # Things to know about Bioconductor:
