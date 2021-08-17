@@ -349,7 +349,11 @@ to the MAGs, though in our experience this is often a conservative
 6. Proteins are compared to protein families in Pfam (Finn et al., 2014) using PfamScan [Pfamscan online tool](https://www.ebi.ac.uk/Tools/pfa/pfamscan/)
 7. Create a tree using [PhyloPhlan](https://huttenhower.sph.harvard.edu/phylophlan) (Segata et al., 2013)
 8. Visualise tree using [GraPhlAn](https://pypi.org/project/graphlan/) (Asnicar et al., 2015). 
-9. The MAG genome sequences are also compared to over 100 000 public genomes using MinHash signatures as implemented in [Sourmash](https://sourmash.readthedocs.io/en/latest/index.html) (Brown and Irber, 2016). [JOSS entry Sourmash](https://www.theoj.org/joss-papers/joss.00027/10.21105.joss.00027.pdf) [Sourmash github](https://github.com/dib-lab/sourmash/)
+9. The MAG genome sequences are also compared to over 100 000 public genomes using MinHash signatures as implemented in [Sourmash](https://sourmash.readthedocs.io/en/latest/index.html) (Brown and Irber, 2016). 
+
+[JOSS entry Sourmash](https://www.theoj.org/joss-papers/joss.00027/10.21105.joss.00027.pdf)
+
+[Sourmash github](https://github.com/dib-lab/sourmash/)
 
 Per authors, [UniProt](https://www.uniprot.org) Hits at step 4:
 
