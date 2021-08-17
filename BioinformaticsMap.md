@@ -305,7 +305,7 @@ https://doi.org/10.1016/j.jhazmat.2021.126365.
  - Complete MAGs with conserved Phylogenetic marker genes, used to identify taxonomic affiliation of MAGs - PhyloPhlAn 3 with NCBI reference genomes.
  - PCA performed using R 'vegan' package. [CRAN vegan](https://rdrr.io/cran/vegan/man/vegan-package.html) [github vegan](https://github.com/vegandevs/vegan/)
  - Clustering and dendrogram preparation
- - Open reading frams on MAGs identified using prokka pipeline.  [prokka paper 2014](https://research.monash.edu/en/publications/prokka-rapid-prokaryotic-genome-annotation)
+ - Open reading frams on MAGs identified using prokka pipeline. [prokka github](https://github.com/tseemann/prokka)  [prokka paper 2014](https://research.monash.edu/en/publications/prokka-rapid-prokaryotic-genome-annotation)
  - The functional orthologs of annotated genes defined using GhostKOALA algorithm based on the KEGG database.
 
 # MAGpy - workflow (Mick Watson Lab)
@@ -333,7 +333,7 @@ to the MAGs, though in our experience this is often a conservative
 6. Proteins are compared to protein families in Pfam (Finn et al., 2014) using PfamScan [Pfamscan online tool](https://www.ebi.ac.uk/Tools/pfa/pfamscan/)
 7. Create a tree using [PhyloPhlan](https://huttenhower.sph.harvard.edu/phylophlan) (Segata et al., 2013)
 8. Visualise tree using [GraPhlAn](https://pypi.org/project/graphlan/) (Asnicar et al., 2015). 
-9. The MAG genome sequences are also compared to over 100 000 public genomes using MinHash signatures as implemented in Sourmash (Brown and Irber, 2016).
+9. The MAG genome sequences are also compared to over 100 000 public genomes using MinHash signatures as implemented in [Sourmash](https://sourmash.readthedocs.io/en/latest/index.html) (Brown and Irber, 2016). [JOSS entry Sourmash](https://www.theoj.org/joss-papers/joss.00027/10.21105.joss.00027.pdf) [Sourmash github](https://github.com/dib-lab/sourmash/)
 
 Per authors, [UniProt](https://www.uniprot.org) Hits at step 4:
 (a) provide annotation of the putative proteins and may predict function; 
