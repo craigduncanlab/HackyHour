@@ -303,9 +303,9 @@ https://doi.org/10.1016/j.jhazmat.2021.126365.
  - The quality-filtered metagenomic sequences from sample datasets included together in the de novo assembly by MEGAHIT.
  - MAGs constructed (binning) using MetaBAT
  - Complete MAGs with conserved Phylogenetic marker genes, used to identify taxonomic affiliation of MAGs - PhyloPhlAn 3 with NCBI reference genomes.
- - PCA performed using R 'vegan' package
+ - PCA performed using R 'vegan' package. [CRAN vegan](https://rdrr.io/cran/vegan/man/vegan-package.html) [github vegan](https://github.com/vegandevs/vegan/)
  - Clustering and dendrogram preparation
- - Open reading frams on MAGs identified using prokka pipeline
+ - Open reading frams on MAGs identified using prokka pipeline.  [prokka paper 2014](https://research.monash.edu/en/publications/prokka-rapid-prokaryotic-genome-annotation)
  - The functional orthologs of annotated genes defined using GhostKOALA algorithm based on the KEGG database.
 
 # MAGpy - workflow (Mick Watson Lab)
@@ -322,24 +322,26 @@ taxonomy and draws a phylogenetic tree."
 
 As per 2018 paper, uses open source MAG analysis workflow, defined by SnakeMake:
  
-1. CheckM (Parks et al., 2015) is run to assess the completeness and contamination
-of MAGs. 
+1. [CheckM](http://ecogenomics.github.io/CheckM/) (Parks et al., 2015) is run to assess the completeness and contamination
+of MAGs. [CheckM Paper](https://pubmed.ncbi.nlm.nih.gov/25977477/)
 2. CheckM conservative assignment of taxonomic level to MAGs
 to the MAGs, though in our experience this is often a conservative
-3. predict protein coding sequences of MAGs using Prodigal (Hyatt et al., 2010). 
-4. DIAMOND (Buchfink et al., 2015) BLASTP is used to compare the proteins to UniProt
-(UniProt Consortium, 2018). 
+3. predict protein coding sequences of MAGs using [Prodigal](https://github.com/hyattpd/Prodigal) (Hyatt et al., 2010). 
+4. [DIAMOND aligner](https://github.com/bbuchfink/diamond) (Buchfink et al., 2015) BLASTP is used to compare the proteins to [UniProt](https://www.uniprot.org)
+(UniProt Consortium, 2018). [DIAMOND paper](https://www.nature.com/articles/nmeth.3176/) [DIAMOND Docker](https://hub.docker.com/r/buchfink/diamond/)
 5. Reports of the DIAMOND results at the level of the MAG and for each contig within each MAG. 
-6. Proteins are compared to protein families in Pfam (Finn et al., 2014) using PfamScan
-7. Create a tree using PhyloPhlAn (Segata et al., 2013)
-8. Visualise tree using GraPhlAn (Asnicar et al., 2015). 
+6. Proteins are compared to protein families in Pfam (Finn et al., 2014) using PfamScan [Pfamscan online tool](https://www.ebi.ac.uk/Tools/pfa/pfamscan/)
+7. Create a tree using [PhyloPhlan](https://huttenhower.sph.harvard.edu/phylophlan) (Segata et al., 2013)
+8. Visualise tree using [GraPhlAn](https://pypi.org/project/graphlan/) (Asnicar et al., 2015). 
 9. The MAG genome sequences are also compared to over 100 000 public genomes using MinHash signatures as implemented in Sourmash (Brown and Irber, 2016).
 
-Per authors, Uniprot Hits at step 4:
+Per authors, [UniProt](https://www.uniprot.org) Hits at step 4:
 (a) provide annotation of the putative proteins and may predict function; 
 (b) protein hits can help define the closest sequenced genome;
 (c) length of the predicted protein and that protein’s hits can be
 used to detect truncated genes and proteins in the MAG annotation.
+
+Both PhyloPhlan and GraPhlan are able to be installed via conda (python).
 
 ## PhyloPhlan 3 (from Huttenhower lab)
 
