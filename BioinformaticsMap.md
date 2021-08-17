@@ -241,6 +241,22 @@ Mikado is a python based prediction comparision tool.  It requires, as a minimu,
 
 Variant calling software (to identify variants within reads in the experiment that are in the same aligned regions) includes GATK-Haplotype caller, playtpus, SAMTools, bcftools.  [Past this, the goals of variant calling is annotation, which will feed back into subsequent indexing for alignment, and differential gene expression work].  The meaning of variant itself varies - it could be a single nucleotide (SNPs) or a deletion or insertion (indels), or structural variations (SVs).
 
+Quick links:
+
+| | Stage  | WF20 |
+|:-----|:-----|:-----|
+| 1 | Seq & QA |   | 
+| 2 | Index for Align |  BWA | 
+| 3 | Align |  BWA-MEM | 
+| 3 | Clean Align |  GATK | 
+| 4 | Joint Call |  GATK | 
+| 5 | Variant Filter |  GATK | 
+https://hpc.nih.gov/training/gatk_tutorial/workflow-overview.html
+
+BWA, GATK and ENSEMBL
+
+GATK is a Java-based tool.
+
 For now, see these Melbourne Bioinformatics resources:
 
 1. [Variant Calling Pipeline](https://github.com/melbournebioinformatics/variant_calling_pipeline)
@@ -249,6 +265,57 @@ For now, see these Melbourne Bioinformatics resources:
 Trimming may be required.  See [TrimmingIntro](https://dnatech.genomecenter.ucdavis.edu/faqs/when-should-i-trim-my-illumina-reads-and-how-should-i-do-it/)
 
 [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)
+
+# PhyloFaN (False negative tweaking)
+
+General Visualisation tool developed in the context of human genetic diversity studies.  
+Developed by [Brenna Henn Lab](http://hennlab.ucdavis.edu/news.html).  Population genetics.
+[Henn Lab Software](http://hennlab.ucdavis.edu/software.html)
+
+[2016 - PhlyoFaN](https://www.biorxiv.org/content/10.1101/066043v2.full.pdf)
+TItle: False Negatives Are a Significant Feature of Next Generation Sequencing Callsets
+Single Nucleotide Variants (SNV's)  - analysis and tuning of false negative (FN) rate in haploid human NGS experiments.
+[PhyloFaN Software](https://ecoevo.stonybrook.edu/hennlab/data-software/)
+
+## Apricot
+
+[Preprint_Apricot (Lin et al)](https://www.biorxiv.org/content/10.1101/2021.03.09.434643v1)
+Title: Admixed Populations Improve Power for Variant Discovery and Portability in Genome-wide Association Studies
+[Apricot Simulation Software](https://github.com/menglin44/APRICOT)
+[Henn Lab Software](http://hennlab.ucdavis.edu/software.html)
+
+# Metagenomics
+
+# Visualisation of phylogenetic trees/dendrograms and fan-like visuals
+
+## Dendrograms and phylogenetic fans.  
+
+Dendrograms and phylogenetic fans/trees: 
+[STHDA_dendrograms](http://www.sthda.com/english/wiki/beautiful-dendrogram-visualizations-in-r-5-must-known-methods-unsupervised-machine-learning)
+(*STHDA = Statistical tools for high-throughput data analysis.*)
+
+Dendrogram options in R:
+1. For hierarchical: ggraph
+2. For clustering: hclust and plot.clust() R functions
+3. Dendextend
+4. ggdendro (extends ggplot2)
+5. pvclust and dendextend
+
+[Phylogenetic fan tip colour](https://stackoverflow.com/questions/46416143/apply-ifelse-function-to-colour-tips-of-phylogenetic-fan)
+
+## Phytools
+
+[PhyTools Blog] (http://blog.phytools.org/2017/06/custom-tip-spacing-of-fan-tree-plot-in-r.html)
+
+## Phylosignal
+
+[CRAN phylosignal](https://cran.r-project.org/package=phylosignal)
+[RefManual](https://cran.r-project.org/web/packages/phylosignal/phylosignal.pdf)
+
+## GGTree (Bioconductor package)
+
+[[GGtree Home](https://guangchuangyu.github.io/software/ggtree/)
+[GGtree vignette](https://bioconductor.org/packages/devel/bioc/vignettes/ggtree/inst/doc/ggtree.html)
 
 # Things to know about Bioconductor:
 
@@ -263,4 +330,4 @@ John Hopkins University has been operating with its own universe of R packages c
 
 https://bioconductor.org/books/release/OSCA/index.html
 
-Bioconductor has its own installation manager (BiocManage) to help with installation.
+Bioconductor has its own installation manager (BiocManager) to help with installation.
