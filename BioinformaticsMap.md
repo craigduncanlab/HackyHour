@@ -241,6 +241,8 @@ Mikado is a python based prediction comparision tool.  It requires, as a minimu,
 
 Variant calling software (to identify variants within reads in the experiment that are in the same aligned regions) includes GATK-Haplotype caller, playtpus, SAMTools, bcftools.  [Past this, the goals of variant calling is annotation, which will feed back into subsequent indexing for alignment, and differential gene expression work].  The meaning of variant itself varies - it could be a single nucleotide (SNPs) or a deletion or insertion (indels), or structural variations (SVs).
 
+(Data Carpentry-based course on bioinformatics](https://hoytpr.github.io/bioinformatics-semester/about/acknowledgments/), by Peter Hoyt, including [variant calling workflow] (https://hoytpr.github.io/bioinformatics-semester/materials/genomics-variant-calling-workflow/)
+
 Quick links:
 
 | | Stage  | WF20 |
@@ -251,6 +253,8 @@ Quick links:
 | 3 | Clean Align |  GATK | 
 | 4 | Joint Call |  GATK | 
 | 5 | Variant Filter |  GATK | 
+
+[Haplotype Caller](https://hpc.nih.gov/training/gatk_tutorial/haplotype-caller.html#optimized-script-2)
 https://hpc.nih.gov/training/gatk_tutorial/workflow-overview.html
 
 BWA, GATK and ENSEMBL
@@ -286,6 +290,38 @@ Title: Admixed Populations Improve Power for Variant Discovery and Portability i
 
 # Metagenomics
 
+Metagenome assembly and analysis  - one workflow example.
+
+Na-Kyung Kim, Sang-Hoon Lee, Hyeokjun Yoon, Garam Jeong, You-Jung Jung, Moonsuk Hur, Byoung-Hee Lee, Hee-Deung Park,
+Microbiome degrading linear alkylbenzene sulfonate in activated sludge,
+Journal of Hazardous Materials,
+Volume 418,2021, 126365, ISSN 0304-3894,
+https://doi.org/10.1016/j.jhazmat.2021.126365.
+
+ - The quality-filtered metagenomic sequences from sample datasets included together in the de novo assembly by MEGAHIT.
+ - MAGs constructed (binning) using MetaBAT
+ - Complete MAGs with conserved Phylogenetic marker genes, used to identify taxonomic affiliation of MAGs - PhyloPhlAn 3 with NCBI reference genomes.
+ - PCA performed using R 'vegan' package
+ - Clustering and dendrogram preparation
+ - Open reading frams on MAGs identified using prokka pipeline
+ - The functional orthologs of annotated genes defined using GhostKOALA algorithm based on the KEGG database.
+
+## PhyloPhlan 3 (from Huttenhower lab)
+
+[PhyloPhlan3](https://huttenhower.sph.harvard.edu/phylophlan):
+
+```
+PhyloPhlAn 3.0 is released in Bioconda and can be installed using the following command:
+
+conda install -c bioconda phylophlan
+```
+
+Bioconda is a channel for the conda package manager, with a focus on bioinformatics software.  It handles all the dependencies for installation (as an alternative to pip). 
+
+[Bioconda Paper](https://www.nature.com/articles/s41592-018-0046-7)
+
+Grüning, B., Dale, R., Sjödin, A. et al. Bioconda: sustainable and comprehensive software distribution for the life sciences. Nat Methods 15, 475–476 (2018). https://doi.org/10.1038/s41592-018-0046-7
+
 # Visualisation of phylogenetic trees/dendrograms and fan-like visuals
 
 ## Dendrograms and phylogenetic fans.  
@@ -316,6 +352,7 @@ Dendrogram options in R:
 
 [GGtree Home](https://guangchuangyu.github.io/software/ggtree/)
 [GGtree vignette](https://bioconductor.org/packages/devel/bioc/vignettes/ggtree/inst/doc/ggtree.html)
+[GGTree article](https://4va.github.io/biodatasci/r-ggtree.html)
 
 # Things to know about Bioconductor:
 
