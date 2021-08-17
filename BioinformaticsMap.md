@@ -95,6 +95,7 @@ These workflows illustrate possible RNA-seq transcriptome quantification and ana
 "On benchmarks with standard RNA-Seq data, kallisto can quantify 30 million human reads in less than 3 minutes on a Mac desktop computer using only the read sequences and a transcriptome index that itself takes less than 10 minutes to build" [RefLink](http://pachterlab.github.io/kallisto/)
 
 Kallisto/Sleuth (Pachterlabs):
+
 [GencoreNotes](https://learn.gencore.bio.nyu.edu/rna-seq-analysis/salmon-kallisto-rapid-transcript-quantification-for-rna-seq-data/)
 
 Kallisto will count the transcriptome (transcripts/sequences) information, but does so without alignment to, or referencing the genome?
@@ -282,10 +283,13 @@ Trimming may be required.  See [TrimmingIntro](https://dnatech.genomecenter.ucda
 # PhyloFaN (False negative tweaking)
 
 General Visualisation tool developed in the context of human genetic diversity studies.  
+
 Developed by [Brenna Henn Lab](http://hennlab.ucdavis.edu/news.html).  Population genetics.
+
 [Henn Lab Software](http://hennlab.ucdavis.edu/software.html)
 
 [2016 - PhlyoFaN](https://www.biorxiv.org/content/10.1101/066043v2.full.pdf)
+
 TItle: False Negatives Are a Significant Feature of Next Generation Sequencing Callsets
 Single Nucleotide Variants (SNV's)  - analysis and tuning of false negative (FN) rate in haploid human NGS experiments.
 [PhyloFaN Software](https://ecoevo.stonybrook.edu/hennlab/data-software/)
@@ -293,8 +297,11 @@ Single Nucleotide Variants (SNV's)  - analysis and tuning of false negative (FN)
 ## Apricot
 
 [Preprint_Apricot (Lin et al)](https://www.biorxiv.org/content/10.1101/2021.03.09.434643v1)
+
 Title: Admixed Populations Improve Power for Variant Discovery and Portability in Genome-wide Association Studies
+
 [Apricot Simulation Software](https://github.com/menglin44/APRICOT)
+
 [Henn Lab Software](http://hennlab.ucdavis.edu/software.html)
 
 # Metagenomics
@@ -345,8 +352,11 @@ to the MAGs, though in our experience this is often a conservative
 9. The MAG genome sequences are also compared to over 100 000 public genomes using MinHash signatures as implemented in [Sourmash](https://sourmash.readthedocs.io/en/latest/index.html) (Brown and Irber, 2016). [JOSS entry Sourmash](https://www.theoj.org/joss-papers/joss.00027/10.21105.joss.00027.pdf) [Sourmash github](https://github.com/dib-lab/sourmash/)
 
 Per authors, [UniProt](https://www.uniprot.org) Hits at step 4:
+
 (a) provide annotation of the putative proteins and may predict function; 
+
 (b) protein hits can help define the closest sequenced genome;
+
 (c) length of the predicted protein and that protein’s hits can be
 used to detect truncated genes and proteins in the MAG annotation.
 
@@ -392,12 +402,15 @@ Dendrogram options in R:
 ## Phylosignal
 
 [CRAN phylosignal](https://cran.r-project.org/package=phylosignal)
+
 [RefManual](https://cran.r-project.org/web/packages/phylosignal/phylosignal.pdf)
 
 ## GGTree (Bioconductor package)
 
 [GGtree Home](https://guangchuangyu.github.io/software/ggtree/)
+
 [GGtree vignette](https://bioconductor.org/packages/devel/bioc/vignettes/ggtree/inst/doc/ggtree.html)
+
 [GGTree article](https://4va.github.io/biodatasci/r-ggtree.html)
 
 # Things to know about Bioconductor:
