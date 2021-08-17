@@ -89,7 +89,7 @@ These workflows illustrate possible RNA-seq transcriptome quantification and ana
 | 1 | Seq & QA |  | 
 | 2 | Align | | [Salmon](https://github.com/COMBINE-lab/salmon) | [Salmon](https://github.com/COMBINE-lab/salmon) |
 | 3 | Count |  [Kallisto](http://pachterlab.github.io/kallisto/) | | [Alevin-Fry](https://github.com/COMBINE-lab/alevin-fry)  |
-| 4 | Covert | | [wasabi](https://github.com/COMBINE-lab/wasabi) | [tximport](https://github.com/mikelove/tximport) |
+| 4 | Convert | | [wasabi](https://github.com/COMBINE-lab/wasabi) | [tximport](https://github.com/mikelove/tximport) |
 | 5 | Analyse |  Kallisto/[Sleuth(R)](http://pachterlab.github.io/sleuth/) | [Sleuth(R)](http://pachterlab.github.io/sleuth/) |[Seurat 4.0](https://satijalab.org/seurat/) |
 
 "On benchmarks with standard RNA-Seq data, kallisto can quantify 30 million human reads in less than 3 minutes on a Mac desktop computer using only the read sequences and a transcriptome index that itself takes less than 10 minutes to build" [RefLink](http://pachterlab.github.io/kallisto/)
@@ -134,7 +134,7 @@ The author of that tutorial is [Avi Srivastava](https://twitter.com/k3yavi), fro
 | 1 | Seq & QA | CellRanger/10x | 
 | 2 | Align | CellRanger |  
 | 3 | Count |  | 
-| 4 | Covert | | 
+| 4 | Convert | | 
 | 5 | Analyse | Seurat | 
 
 CellRanger is commercial, supplied with 10X data.
