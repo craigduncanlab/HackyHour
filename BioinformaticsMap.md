@@ -8,12 +8,17 @@ Guides to navigating the bioinformatics workflows 'help desk' space.  Always a w
 Current list (will no doubt grow)
 
 [Snakemake](https://snakemake.github.io)
+
 [cwltool](https://pypi.org/project/cwltool/) - Common Workflow Language, python implementation
+
 [Toil](http://toil.ucsc-cgl.org) - also python
+
 [Nextflow](https://www.nextflow.io)
 
 Containers:
+
 [Docker](https://www.docker.com)
+
 [Singularity](https://singularity.hpcng.org) - HPC container system
 
 # Workflow - common bioinformatics pipeline phases
@@ -324,7 +329,7 @@ taxonomy and draws a phylogenetic tree."
 
 ## MAGpy internal workflow
 
-As per 2018 paper, uses open source MAG analysis workflow, defined by SnakeMake:
+As per 2018 paper, uses open source MAG analysis workflow, which can be defined by [Snakemake](https://snakemake.github.io):
  
 1. [CheckM](http://ecogenomics.github.io/CheckM/) (Parks et al., 2015) is run to assess the completeness and contamination
 of MAGs. [CheckM Paper](https://pubmed.ncbi.nlm.nih.gov/25977477/)
