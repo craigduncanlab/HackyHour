@@ -290,7 +290,9 @@ Title: Admixed Populations Improve Power for Variant Discovery and Portability i
 
 # Metagenomics
 
-Metagenome assembly and analysis  - one workflow example.
+Metagenome assembly and analysis 
+
+## One workflow example.
 
 Na-Kyung Kim, Sang-Hoon Lee, Hyeokjun Yoon, Garam Jeong, You-Jung Jung, Moonsuk Hur, Byoung-Hee Lee, Hee-Deung Park,
 Microbiome degrading linear alkylbenzene sulfonate in activated sludge,
@@ -305,6 +307,39 @@ https://doi.org/10.1016/j.jhazmat.2021.126365.
  - Clustering and dendrogram preparation
  - Open reading frams on MAGs identified using prokka pipeline
  - The functional orthologs of annotated genes defined using GhostKOALA algorithm based on the KEGG database.
+
+# MAGpy - workflow (Mick Watson Lab)
+
+MAGpy = "a scalable and reproducible pipeline that takes multiple genome
+assemblies as FASTA and compares them to several public databases, checks quality, suggests a
+taxonomy and draws a phylogenetic tree."
+
+[Stewart et al MAGpy 2018 paper](http://dx.doi.org/10.1093/bioinformatics/bty905)
+
+[MAGpy_Github](https://github.com/WatsonLab/MAGpy)
+
+## MAGpy internal workflow
+
+As per 2018 paper, uses open source MAG analysis workflow, defined by SnakeMake:
+ 
+1. CheckM (Parks et al., 2015) is run to assess the completeness and contamination
+of MAGs. 
+2. CheckM conservative assignment of taxonomic level to MAGs
+to the MAGs, though in our experience this is often a conservative
+3. predict protein coding sequences of MAGs using Prodigal (Hyatt et al., 2010). 
+4. DIAMOND (Buchfink et al., 2015) BLASTP is used to compare the proteins to UniProt
+(UniProt Consortium, 2018). 
+5. Reports of the DIAMOND results at the level of the MAG and for each contig within each MAG. 
+6. Proteins are compared to protein families in Pfam (Finn et al., 2014) using PfamScan
+7. Create a tree using PhyloPhlAn (Segata et al., 2013)
+8. Visualise tree using GraPhlAn (Asnicar et al., 2015). 
+9. The MAG genome sequences are also compared to over 100 000 public genomes using MinHash signatures as implemented in Sourmash (Brown and Irber, 2016).
+
+Per authors, Uniprot Hits at step 4:
+(a) provide annotation of the putative proteins and may predict function; 
+(b) protein hits can help define the closest sequenced genome;
+(c) length of the predicted protein and that protein’s hits can be
+used to detect truncated genes and proteins in the MAG annotation.
 
 ## PhyloPhlan 3 (from Huttenhower lab)
 
