@@ -243,17 +243,6 @@ Variant calling software (to identify variants within reads in the experiment th
 
 (Data Carpentry-based course on bioinformatics](https://hoytpr.github.io/bioinformatics-semester/about/acknowledgments/), by Peter Hoyt, including [variant calling workflow] (https://hoytpr.github.io/bioinformatics-semester/materials/genomics-variant-calling-workflow/)
 
-Quick links:
-
-| | Stage  | WF20 |
-|:-----|:-----|:-----|
-| 1 | Seq & QA |   | 
-| 2 | Index for Align |  BWA | 
-| 3 | Align |  BWA-MEM | 
-| 3 | Clean Align |  GATK | 
-| 4 | Joint Call |  GATK | 
-| 5 | Variant Filter |  GATK | 
-
 [Haplotype Caller](https://hpc.nih.gov/training/gatk_tutorial/haplotype-caller.html#optimized-script-2)
 https://hpc.nih.gov/training/gatk_tutorial/workflow-overview.html
 
