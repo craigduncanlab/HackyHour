@@ -259,7 +259,7 @@ https://hpc.nih.gov/training/gatk_tutorial/workflow-overview.html
 
 BWA, GATK and ENSEMBL
 
-GATK is a Java-based tool.
+[GATK](https://gatk.broadinstitute.org/hc/en-us) is a diverse, Java-based tool.
 
 For now, see these Melbourne Bioinformatics resources:
 
