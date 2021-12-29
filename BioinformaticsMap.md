@@ -97,6 +97,7 @@ These workflows illustrate possible RNA-seq transcriptome quantification and ana
 Kallisto/Sleuth (Pachterlabs):
 
 [GencoreNotes](https://learn.gencore.bio.nyu.edu/rna-seq-analysis/salmon-kallisto-rapid-transcript-quantification-for-rna-seq-data/)
+
 [Geneviève Boucher's notes (2018)](https://bioinfo.iric.ca/understanding-how-kallisto-works/)
 
 Kallisto will count the transcriptome (transcripts/sequences) information, but does so without alignment to, or referencing the genome?
