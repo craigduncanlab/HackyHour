@@ -246,11 +246,20 @@ WF17 to 19 - MAKER and BRAKER are *ab initio* tools that infer gene structures b
 
 GeneMark-ET is an self-training algorithm, developed at Georgia Institute of Tech, that integrates information on splice-aligned RNA-seq reads with genomic information.
 
-WF18 - [AUGUSTUS](https://doi.org/10.1093/bioinformatics/btn013) is another algorithm for gene prediction.  For model parameter estimation, AUGUSTUS requires an expert curated training set of genes.  It incorporates several different evidence sources, including gene and transcript annotations from related species.  Some essential tools (including for BRAKER) include the C++ tool bam2hints.  The output is a .gtf file.  
+WF18 - [AUGUSTUS](https://doi.org/10.1093/bioinformatics/btn013) is another algorithm for gene prediction.  For model parameter estimation, AUGUSTUS requires an expert curated training set of genes.  It incorporates several different evidence sources, including gene and transcript annotations from related species.  Some essential tools (including for BRAKER) include the C++ tool bam2hints.  
 
-WF18 & 19 - BRAKER1 was released in 2015, as a tool to train AUGUSTUS.  BRAKER is a collection of Perl and Python scripts and a Perl module.  It is "a combination of GeneMark-ET R2 and AUGUSTUS R3, R4, that uses genomic and RNA-Seq data to automatically generate full gene structure annotations in novel genome." :[RefLink](https://github.com/Gaius-Augustus/BRAKER#what-is-braker).  "If Biopython is installed, BRAKER can generate FASTA-files with coding sequences and protein sequences predicted by AUGUSTUS..."
+The output is a .gtf file.  
 
-BRAKER2 is a fully automated training, based on GeneMark-EX and AUGUSTUS.
+EXAMPLE HACKY HOUR PROBLEM:
+For NCBI genome information you may wish to output from AUGUSTUS as a gff3 file.  There are some instructions [here](https://www.ncbi.nlm.nih.gov/genbank/genomes_gff/).  
+
+*However, as far as I know, Augustus currently (15 March 2022) has some issues with producing a valid gff3 that will pass the NCBI genometools validator.   Some suggested fixes will be included here in due course.*
+
+WF18 & 19 - *Automated genome annotation*
+
+BRAKER1 was released in 2015, as a tool to train AUGUSTUS.  BRAKER is a collection of Perl and Python scripts and a Perl module.  It is "a combination of GeneMark-ET R2 and AUGUSTUS R3, R4, that uses genomic and RNA-Seq data to automatically generate full gene structure annotations in novel genome." :[RefLink](https://github.com/Gaius-Augustus/BRAKER#what-is-braker).  "If Biopython is installed, BRAKER can generate FASTA-files with coding sequences and protein sequences predicted by AUGUSTUS..."
+
+BRAKER2 is a fully automated training tool, based on GeneMark-EX and AUGUSTUS.
 
 For the latest on the BIND pipeline (direct inference) see Dept of Genetics, Iowa State Uni team: [BIND/MIND bioRxiv](https://www.biorxiv.org/content/10.1101/2019.12.17.880294v3).  The Direct Inference pipeline, with SnakeMake ([python script](https://github.com/eswlab/orphan-prediction/blob/master/evidence_based_pipeline/snakemake_config/slurm/slurm-submit.py)), is available from: https://github.com/eswlab/orphan-prediction/tree/master/evidence_based_pipeline  (there are instructions there for installing from the conda/bioconda channel).  There are some basic single node and HPC pipeline instructions too.
 
