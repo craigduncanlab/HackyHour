@@ -253,7 +253,7 @@ The output is a .gtf file.
 EXAMPLE HACKY HOUR PROBLEM:
 For NCBI genome information you may wish to output from AUGUSTUS as a gff3 file.  There are some instructions [here](https://www.ncbi.nlm.nih.gov/genbank/genomes_gff/).  
 
-*However, as far as I know, Augustus currently (15 March 2022) has some issues with producing a valid gff3 that will pass the NCBI genometools validator.   Some suggested fixes will be included here in due course.*
+*However, as far as I know, Augustus currently (15 March 2022) has some issues with producing a valid gff3 that will pass the NCBI genometools validator.   Some suggested fixes will be included here in due course.  One tool that may help to prepare a suitable gff file is table2asn.  See [NCBI link](https://www.ncbi.nlm.nih.gov/genbank/table2asn/).  As advised by P.Bayer 15.3.22*
 
 WF18 & 19 - *Automated genome annotation*
 
