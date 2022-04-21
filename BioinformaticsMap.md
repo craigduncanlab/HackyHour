@@ -78,7 +78,9 @@ The original counting methods used target genes to provide the static, non-overl
 
 An original measure, namely reads/fragments per kilobase per million reads, has been queried recently.
 
-# Differential Expression workflows - pseudo-alignment
+# Differential Expression workflows 
+
+## Pseudo-alignment
 
 Pseudo-alignment is a broad term used to describe the transcript counting methods of tools such as kallisto and Salmon.
 
@@ -128,8 +130,20 @@ From the 1 July 2021 bioRxiv paper:
 3. You can pipe the Alevin information into Seurat: [Tute](https://combine-lab.github.io/alevin-tutorial/2018/alevin-seurat/) (tutorial by )
 The author of that tutorial is [Avi Srivastava](https://twitter.com/k3yavi), from the Satija Lab.
 
-# Differential Expression analysis - full alignment of RNA-seq to genomes
+# RNA-sequencing and full alignment to genomes
 
+## Some general RNA seq workflows that utilise Nextflow
+
+The NextFlow-Core community is working on capturing some general bioinformatics workflows in Nextflow scripts (pipelines), from initial sequencing through to analysis.  Some of the pipelines have as many as 15 separate steps.  
+
+Follow this general link:
+[RNASeq_Nextflow](https://nf-co.re/rnaseq)
+
+The above-mentioned pipeline includes use of STAR or HISAT2 at Step 7 (it is noted in link above that HISAT2 does not perform quantification at the alignment stage, and that other downstream software is needed to do this).  
+
+For some possible alternatives RNA seq pipelines see below.
+
+## Other
 
 | | Stage  | WF4 | 
 |:-----|:-----|:-----|
@@ -155,7 +169,7 @@ WF4-WF6:
 
 STAR is a long-read RNA-Seq aligner.  Another is [GMAP](http://research-pub.gene.com/gmap/).
 
-STAR (and some other aligners) usually require unmapped BAM or SAM files - this means if you have FASTQ you have to insert another step to convert them to SAM or BAM, and this requires use of some of the FASTQ tools (e.g. Picard and DropUtils, which are relaetd to the DropSeq workflow.  There may be other tools.).  In any case, SAM and BAM are formats designed for the output of the alignment process, not just for the step preceding alignment.   Alignment may not immediately produce analysis ready BAM/SAM data: there may still be a need for removal of duplicates or bias.
+STAR (and some other aligners) usually require unmapped BAM or SAM files - this means if you have FASTQ files as your sequencing output data format you have to insert another step to convert them to SAM or BAM, and this requires use of some of the FASTQ tools (e.g. Picard and DropUtils, which are relaetd to the DropSeq workflow.  There may be other tools.).  In any case, SAM and BAM are formats designed for the output of the alignment process, not just for the step preceding alignment.   Alignment may not immediately produce analysis ready BAM/SAM data: there may still be a need for removal of duplicates or bias.
 
 An annotation file (GTF/GFF/GFF3) is needed for most alignment steps in Stage 2 (WF1-WF3), and also for some of the non-alignment counters like Kallisto and Salmon (WF4)
 
