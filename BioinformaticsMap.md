@@ -355,14 +355,14 @@ Kraken2 produces at least 2 formats.  The taxonomic trees in output files may ne
 
 Good source for Kraken2Tools (there is a 2022 paper in Nature too):
 
-[Jennifer Lu paper, 2022](https://github.com/jenniferlu717/KrakenTools)
+[Jennifer Lu Kraken2Tools Github](https://github.com/jenniferlu717/KrakenTools)
 
 Paper:
  ```
  [Lu J, Rincon N, Wood D E, Breitwieser F P, Pockrandt C, Langmead B, Salzberg S L, Steinegger M. 
  - Metagenome analysis using the Kraken software suite. Nature Protocols, doi: 10.1038/s41596-022-00738-y (2022)]
  ```
-  [Link](https://www.nature.com/articles/s41596-022-00738-y)
+  [2002 Nature Paper, Jennifer Lu et al](https://www.nature.com/articles/s41596-022-00738-y)
 
 Other install locations for [Kraken2Tools](https://bioconda.github.io/recipes/krakentools/README.html)
 
