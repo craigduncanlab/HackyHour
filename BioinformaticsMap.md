@@ -362,7 +362,7 @@ Paper:
  [Lu J, Rincon N, Wood D E, Breitwieser F P, Pockrandt C, Langmead B, Salzberg S L, Steinegger M. 
  - Metagenome analysis using the Kraken software suite. Nature Protocols, doi: 10.1038/s41596-022-00738-y (2022)]
  ```
-  [2002 Nature Paper, Jennifer Lu et al](https://www.nature.com/articles/s41596-022-00738-y)
+  [2022 Nature Paper, Jennifer Lu et al](https://www.nature.com/articles/s41596-022-00738-y)
 
 Other install locations for [Kraken2Tools](https://bioconda.github.io/recipes/krakentools/README.html)
 
