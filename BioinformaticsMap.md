@@ -349,6 +349,21 @@ https://doi.org/10.1016/j.jhazmat.2021.126365.
  - Open reading frams on MAGs identified using prokka pipeline. [prokka github](https://github.com/tseemann/prokka)  [prokka paper 2014](https://research.monash.edu/en/publications/prokka-rapid-prokaryotic-genome-annotation)
  - The functional orthologs of annotated genes defined using GhostKOALA algorithm based on the KEGG database.
 
+## Some Kraken2 resources
+
+Kraken2 produces at least 2 formats.  The taxonomic trees in output files may need further work for statistical analysis.  For downstream processing (.report2 etc)
+
+Good source for Kraken2Tools (there is a 2022 paper in Nature too):
+[Jennifer Lu paper, 2022] (https://github.com/jenniferlu717/KrakenTools)
+
+Paper:
+ ```[Lu J, Rincon N, Wood D E, Breitwieser F P, Pockrandt C, Langmead B, Salzberg S L, Steinegger M. 
+ - Metagenome analysis using the Kraken software suite. Nature Protocols, doi: 10.1038/s41596-022-00738-y (2022)]
+ ```
+  [Link](https://www.nature.com/articles/s41596-022-00738-y)
+
+Other install locations for [Kraken2Tools] (https://bioconda.github.io/recipes/krakentools/README.html)
+
 # MAGpy - workflow (Mick Watson Lab)
 
 MAGpy = "a scalable and reproducible pipeline that takes multiple genome
