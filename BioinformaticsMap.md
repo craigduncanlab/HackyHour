@@ -335,7 +335,11 @@ Metagenome assembly and analysis
 
 ## Some useful tools
 
-See [Wei Shen Github](https://github.com/shenwei356), a bioinformation from China who works on microbial genomics and metagenomics.  These tools include [SeqKit](https://bioinf.shenwei.me/seqkit/) for FASTA/Q file manipulation.
+See [Wei Shen Github](https://github.com/shenwei356), a bioinformation from China who works on microbial genomics and metagenomics.  These tools include [SeqKit](https://bioinf.shenwei.me/seqkit/) for FASTA/Q file manipulation.  SeqKit is written in Go Language, and in addition to Shen's code, makes use of BAM and watch functions from [Thist](https://github.com/botond-sipos/thist) go-lang package by [Botond Sipos](https://bsipos.github.io)), from Oxford Nanopore.
+
+Citation:
+W Shen, S Le, Y Li*, F Hu*. SeqKit: a cross-platform and ultrafast toolkit for FASTA/Q file manipulation. PLOS ONE. doi:10.1371/journal.pone.0163962.
+
 
 ## One workflow example.
 
