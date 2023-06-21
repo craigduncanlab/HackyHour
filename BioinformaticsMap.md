@@ -26,9 +26,13 @@ Containers:
 ## General steps that occur in most workflows.
 
 (1) Seq & QA checks (may be done offset, by the big labs, but you supply data)
+
 (2) Align 
+
 (3) Index (reference index for counting - may be optional)
+
 (4) Count 
+
 (5) Analyse 
 
 Various combinations of tools can be used, but since some tools are specialised, there are situations in which the same tool can be used at an earlier or later part of the process for the same workflows.  
