@@ -333,6 +333,10 @@ Title: Admixed Populations Improve Power for Variant Discovery and Portability i
 
 Metagenome assembly and analysis 
 
+## Some useful tools
+
+See [Wei Shen Github](https://github.com/shenwei356), a bioinformation from China who works on microbial genomics and metagenomics.  These tools include [SeqKit](https://bioinf.shenwei.me/seqkit/) for FASTA/Q file manipulation.
+
 ## One workflow example.
 
 Na-Kyung Kim, Sang-Hoon Lee, Hyeokjun Yoon, Garam Jeong, You-Jung Jung, Moonsuk Hur, Byoung-Hee Lee, Hee-Deung Park,
