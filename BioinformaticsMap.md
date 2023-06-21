@@ -133,8 +133,10 @@ From the 1 July 2021 bioRxiv paper:
 "It makes use of salmon (4) for basic barcode and UMI parsing and the mapping of the reads to the constructed reference index. The output of salmon, when configured to produce output for alevin-fry, is a RAD (Reduced Alignment Data) format file, which is a chunk-based binary file optimized for machine parsing, that encodes the relevant information necessary for subsequent (post-mapping) processing of the data (Section S1)."
 ```
 
-3. You can pipe the Alevin information into Seurat: [Tute](https://combine-lab.github.io/alevin-tutorial/2018/alevin-seurat/) (tutorial by )
+3. You can pipe the Alevin information into Seurat: [Tute](https://combine-lab.github.io/alevin-tutorial/2018/alevin-seurat/).
 The author of that tutorial is [Avi Srivastava](https://twitter.com/k3yavi), from the Satija Lab.
+
+I have also prepared some [notes](https://github.com/craigduncanlab/singlecell/tree/master/seurat) on my exploration of the data structures and R objects in a Seurat object in R markdown files.
 
 # RNA-sequencing and full alignment to genomes
 
