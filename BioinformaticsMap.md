@@ -25,7 +25,7 @@ Containers:
 
 ## General steps that occur in most workflows.
 
-(1) Seq & QA checks (may be done offset, by the big labs, but you supply data)
+(1) Seq & QA checks (may be done offsite, by the big labs, and you supply data)
 
 (2) Align 
 
@@ -39,32 +39,34 @@ Various combinations of tools can be used, but since some tools are specialised,
 
 As between the abbreviated tables with seq/align/count/analyse, it may be possible to skip from step 2 in one table to step 3 in the next.
 
-Steps 2 to 4 are most data intensive but knowing the basis for 1 means knowing the scientific goals well.
+Steps 2 to 4 are most data intensive but there is an important relationship to consider between your scientific goals and the kind of QA checks you want or should perform.
 
-Also, step 2 (alignment) is often performed with the assistance of a feature-based index, so this is something that must be obtained or created before performing the alignment.
+Step 2 (alignment) is often performed with the assistance of a feature-based index, so this is something that must be obtained or created before performing the alignment.
 
-In step 3, some packages are in python (e.g. https://htseq.readthedocs.io/en/master/counting.html), with differential expression (not variation calling or gene prediction) being the end goal. 
+In step 3, some packages are written in python (e.g. https://htseq.readthedocs.io/en/master/counting.html), with differential expression (not variation calling or gene prediction) being the end goal. 
 
 Noteworthy points about bioinformatics workflows:
-1. You can mix and match a bit with software at each stage, but the more common approach is for vertical setups to be developed.  e.g. in R ecosystem, or Bioconductor etc.
-2. Within workflows, there may sometimes be choices as to computing environment but alignment will generally push requirements to HPC.
+1. You can mix and match a bit with software at each stage, but the more common approach is for vertical workflows to be developed that take you through each of the stages with a predefined set of tools with checks on data interfaces.  e.g. in R ecosystem, or Bioconductor etc.
+2. Within workflows, there may sometimes be choices as to computing environment but alignment will generally push requirements to a HPC system.
 3. Size of genomes and place in biological space (kingdom, species) often affect both assumptions of software development and HPC requirements e.g. different requirements for
 (a) Mouse, Human, common medical context.
 (b) Small plant v large plant genomes
 
-The permutations involved in bionformatics workflows are considerable.  Even amongst these tools, and the named stages, researchers may be:
+There are many different ways of constructing bionformatics workflows.  Even amongst these tools, and the named stages, researchers may have different preferences, for example:
 1. Attempting different analysis goals, including variant calling or differential gene expression (variant calling may qualify for stage 4 'analysis', omitting stage 3).  
-2. Choosing to perform the work on a PC, rather than HPC
+2. To perform the work on a PC, rather than HPC
 3. To work on a large rather than a small genome
 4. To work on human or non-human animal genomes, or plant genomes, or bacteria.
-5. To align short or long reads (some tools are for 'short reads' i.e.). 
-6. DNA (with introns, gaps) or RNA (no introns, spliced) TopHat2, 
+5. To align short or long reads (some tools are designed for 'short reads' e.g. TopHat2). 
+6. DNA (with introns, gaps) or RNA (no introns, spliced) 
 7. Single end or paired end reads
 8. Whether a software package outputs files, structures, or some custom object.
 
-(nb many of these choices find their way into paramaters of functions like featureCounts in RSubread)
+(nb many of these choices become default input arguments or parameters of functions like featureCounts in RSubread)
 
-It's necessary to understand the relationship between the type of genome (plant, animal, model species (human, mouse)), whether it is a DNA or RNA genomic study, and the consequences this has immediately for the alignment tools and constraints.  In the following workflows, the 4 stages of analysis may be the same, but these genomic considerations suggest that the use of appropriate alignment tools will be suggested.  If there are vertical workflows that pipe information from these aligners to specific counting programs, then these should also shop up in the workflow.
+It's necessary to understand the relationship between the type of genome (plant, animal, model species (human, mouse)), whether it is a DNA or RNA genomic study, and the consequences this has immediately for the alignment tools and constraints.  
+
+In the following workflows, the 4 stages of analysis may be the same, but these genomic considerations require appropriate alignment tools for each case.  If there are vertical workflows that pipe information from these aligners to specific counting programs, then these should also show up in the workflow.
 
 ## RNA-seq studies
 
