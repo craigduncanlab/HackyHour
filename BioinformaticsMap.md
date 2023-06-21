@@ -1,5 +1,5 @@
 # Hacky Hour Bioinformatics Links
-Last updated 29.12.21
+Last updated 21.6.23
 
 Guides to navigating the bioinformatics workflows 'help desk' space.  Always a work in progress.
 
